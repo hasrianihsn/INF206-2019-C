@@ -2,18 +2,18 @@
 
 	Template Author : pixelhint.com
 	Author Email    : contact@pixelhint.com
-	
-	
+
+
 	*****************************************
-	
-	
+
+
 	- Header
 	- Billboard
 	- Services
 	- Call To Action
 	- Testimonials
 	- Footer
-	
+
 */
 
 
@@ -103,7 +103,7 @@ header nav ul li a:hover{
 /*  Billboard  */
 .billboard{
 	width: 100%;
-	height: 600px;
+	height: 1000px;
 	background: #ffffff url('../img/billboard_bg.jpg') no-repeat fixed;
 }
 
@@ -390,27 +390,27 @@ header nav ul li a:hover{
 
 .newsletter .email_field:-moz-placeholder ,/* Firefox 18- */
 .newsletter .name_field:-moz-placeholder { /* Firefox 18- */
-   color: #d3d2d2;  
+   color: #d3d2d2;
 }
 
 .newsletter .email_field::-moz-placeholder , /* Firefox 19+ */
 .newsletter .name_field::-moz-placeholder {  /* Firefox 19+ */
-   color: #d3d2d2;  
+   color: #d3d2d2;
 }
 
-.newsletter .email_field:-ms-input-placeholder,  
-.newsletter .name_field:-ms-input-placeholder {  
-   color: #d3d2d2;  
-} 
+.newsletter .email_field:-ms-input-placeholder,
+.newsletter .name_field:-ms-input-placeholder {
+   color: #d3d2d2;
+}
 
 .newsletter .email_field{
 	border-top-left-radius: 100px;
 	border-bottom-left-radius: 100px;
-	border-right: 1px #e4e4e4 solid; 
+	border-right: 1px #e4e4e4 solid;
 }
 
 .newsletter .name_field{
-	padding-right: 0; 
+	padding-right: 0;
 }
 
 .newsletter .submit_nl{
@@ -426,7 +426,7 @@ header nav ul li a:hover{
 	margin-right: 10px;
 	margin-top: 11px;
 	outline: none;
- 
+
 	border-radius: 20px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
