@@ -17,8 +17,8 @@
 				<a href="#"><img src="img/logo.png" class="h_logo" alt="" title=""></a>
 				<nav>
 					<ul class="main_nav">
-						<li><a href="#">Ikan</a></li>
-						<li><a href="#">Seafood</a></li>
+						<li><a href="ikan.php">Ikan</a></li>
+						<li><a href="seafood.php">Seafood</a></li>
 						<li><a href="#">Log Out</a></li>
 					</ul>
 				</nav>
