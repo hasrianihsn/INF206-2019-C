@@ -53,7 +53,7 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
-                  <form method="POST" action="<?= base_url();?>index.php/login/aksi_login" class="user form">
+                  <form method="POST" action="<?= base_url();?>index.php/login/" class="user form">
                     <div class="form-group">
                       <input name="email" type="text" class="form-control form-control-user" id="email" placeholder="Enter Your Username..." required>
                     </div>
