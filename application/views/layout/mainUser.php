@@ -4,10 +4,10 @@
 	<title>halaman home</title>
 	<meta charset="utf-8">
 	<meta name="author" content="pixelhint.com">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/reset.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/main.css">
-    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/css/main.css">
+    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>/js/main.js"></script>
 </head>
 <body>
 
@@ -23,7 +23,7 @@
 					</ul>
 				</nav>
 			</div>
+			<?php
+  $this->load->view($mainUser);?>
+
 		</header>
-<?php
-  $this->load->view($main_user);
-?>
