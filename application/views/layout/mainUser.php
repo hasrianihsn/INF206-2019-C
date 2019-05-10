@@ -24,6 +24,6 @@
 				</nav>
 			</div>
 			<?php
-  $this->load->view($main_user);?>
+  $this->load->view($mainUser);?>
 
 		</header>
