@@ -16,6 +16,6 @@ class register extends CI_Controller
       'email' => $email,
       'password' => $password
     ]);
-    redirect('login/masuk');
+    redirect('login');
   }
 }
