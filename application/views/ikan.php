@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>halaman home</title>
-	<meta charset="utf-8">
-	<meta name="author" content="pixelhint.com">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</head>
+
 <body>
 
 	<section class="billboard">
@@ -17,8 +7,8 @@
 				<a href="#"><img src="img/logo.png" class="h_logo" alt="" title=""></a>
 				<nav>
 					<ul class="main_nav">
-						<li><a href="index.html">Ikan</a></li>
-						<li><a href="seafood.html">Seafood</a></li>
+						<li><a href="ikan.php">Ikan</a></li>
+						<li><a href="seafood.php">Seafood</a></li>
 						<li><a href="#">Log Out</a></li>
 					</ul>
 				</nav>
