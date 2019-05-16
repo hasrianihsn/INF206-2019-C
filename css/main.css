@@ -21,38 +21,38 @@
 
 /*  Fonts  */
 @font-face {
-    font-family: 'LatoRegular';
-    src: url('../fonts/Lato-Regular.eot');
-    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Lato-Regular.woff') format('woff'),
-         url('../fonts/Lato-Regular.ttf') format('truetype'),
-         url('../fonts/Lato-Regular.svg#LatoRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'LatoRegular';
+	src: url('../fonts/Lato-Regular.eot');
+	src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato-Regular.woff') format('woff'),
+		url('../fonts/Lato-Regular.ttf') format('truetype'),
+		url('../fonts/Lato-Regular.svg#LatoRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'LatoBold';
-    src: url('../fonts/Lato-Bold.eot');
-    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Lato-Bold.woff') format('woff'),
-         url('../fonts/Lato-Bold.ttf') format('truetype'),
-         url('../fonts/Lato-Bold.svg#LatoBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'LatoBold';
+	src: url('../fonts/Lato-Bold.eot');
+	src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato-Bold.woff') format('woff'),
+		url('../fonts/Lato-Bold.ttf') format('truetype'),
+		url('../fonts/Lato-Bold.svg#LatoBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'HoneyLight';
-    src: url('../fonts/honeyscript-light-webfont.eot');
-    src: url('../fonts/honeyscript-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/honeyscript-light-webfont.woff') format('woff'),
-         url('../fonts/honeyscript-light-webfont.ttf') format('truetype'),
-         url('../fonts/honeyscript-light-webfont.svg#honey_scriptlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'HoneyLight';
+	src: url('../fonts/honeyscript-light-webfont.eot');
+	src: url('../fonts/honeyscript-light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/honeyscript-light-webfont.woff') format('woff'),
+		url('../fonts/honeyscript-light-webfont.ttf') format('truetype'),
+		url('../fonts/honeyscript-light-webfont.svg#honey_scriptlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
@@ -60,7 +60,7 @@
 
 
 /*  Header  */
-header{
+header {
 	width: 100%;
 	height: 100px;
 	/*background: #f4c995;*/
@@ -69,22 +69,23 @@ header{
 	z-index: 9999;
 }
 
-header .h_logo{
+header .h_logo {
 	float: left;
 	margin-top: 20px;
 }
 
-header nav{
+header nav {
 	float: right;
 	margin-top: 42px;
 	overflow: hidden;
 }
-header nav ul li{
+
+header nav ul li {
 	float: left;
 	margin-left: 30px;
 }
 
-header nav ul li a{
+header nav ul li a {
 	text-decoration: none;
 	font-family: 'LatoBold', arial;
 	font-weight: bold;
@@ -93,7 +94,7 @@ header nav ul li a{
 	letter-spacing: 1px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
 	color: #ffffff;
 }
 
@@ -101,21 +102,21 @@ header nav ul li a:hover{
 
 
 /*  Billboard  */
-.billboard{
+.billboard {
 	width: 100%;
 	height: 2000px;
 	background: #ffffff url('../img/billboard_bg.jpg') no-repeat fixed;
 }
 
 
-.caption{
+.caption {
 	width: 100%;
 	text-align: center;
 	position: absolute;
 	top: 270px;
 }
 
-.caption .cap_title{
+.caption .cap_title {
 	font-family: 'LatoBold', arial;
 	font-weight: Bold;
 	font-size: 40px;
@@ -124,7 +125,7 @@ header nav ul li a:hover{
 	letter-spacing: 1.5px;
 }
 
-.caption .cap_desc{
+.caption .cap_desc {
 	font-family: 'HoneyLight';
 	font-size: 50px;
 	color: #ffffff;
@@ -133,23 +134,23 @@ header nav ul li a:hover{
 
 
 
-.main{
+.main {
 	height: 50000px;
 }
 
 
 /*  Services  */
-.services{
+.services {
 	margin-bottom: 80px;
 }
 
-.services .S_icons{
+.services .S_icons {
 	margin-top: -80px;
 	padding-left: 64px;
 	margin-bottom: 30px;
 }
 
-.services hr.sp{
+.services hr.sp {
 	display: inline-block;
 	width: 230px;
 	height: 10px;
@@ -159,16 +160,16 @@ header nav ul li a:hover{
 	margin-left: -4px;
 }
 
-.services img{
+.services img {
 	margin-left: -4px;
 }
 
-.services .desc{
+.services .desc {
 	width: 100%;
 	overflow: hidden;
 }
 
-.services .desc li{
+.services .desc li {
 	list-style: none;
 	float: left;
 	width: 235px;
@@ -177,15 +178,15 @@ header nav ul li a:hover{
 	margin-right: 155px;
 }
 
-.services .desc li:first-child{
+.services .desc li:first-child {
 	margin-left: 22px;
 }
 
-.services .desc li:last-child{
+.services .desc li:last-child {
 	margin-right: 0;
 }
 
-.services .desc li h3{
+.services .desc li h3 {
 	font-family: 'LatoBold', arial;
 	font-weight: bold;
 	font-size: 25px;
@@ -193,7 +194,7 @@ header nav ul li a:hover{
 	margin-bottom: 30px;
 }
 
-.services .desc li p{
+.services .desc li p {
 	font-family: 'LatoRegular', arial;
 	font-size: 14px;
 	color: #7e7e7e;
@@ -203,7 +204,7 @@ header nav ul li a:hover{
 
 
 /* Call To Action Style */
-.call_to_action{
+.call_to_action {
 	width: 100%;
 	height: 460px;
 	background-color: #f7f7f7;
@@ -211,19 +212,20 @@ header nav ul li a:hover{
 	margin-bottom: 80px;
 }
 
-.call_to_action img{
+.call_to_action img {
 	width: 578px;
 	margin-top: 73px;
 	margin-left: -99px;
 	float: left;
 }
-.call_to_action .cta_desc{
+
+.call_to_action .cta_desc {
 	width: 580px;
 	float: right;
 	margin-top: 76px;
 }
 
-.call_to_action h3{
+.call_to_action h3 {
 	font-family: 'LatoBold', arial;
 	font-weight: bold;
 	color: #646363;
@@ -233,7 +235,7 @@ header nav ul li a:hover{
 	margin-bottom: 30px;
 }
 
-.call_to_action p{
+.call_to_action p {
 	font-family: 'LatoRegular', arial;
 	color: #7e7e7e;
 	font-size: 16px;
@@ -242,7 +244,7 @@ header nav ul li a:hover{
 	margin-bottom: 50px;
 }
 
-.call_to_action a.cta_btn{
+.call_to_action a.cta_btn {
 	padding: 15px 40px;
 	display: inline-block;
 	color: #fff;
@@ -266,15 +268,13 @@ header nav ul li a:hover{
 	-o-box-shadow: 0 3px 0 #cd8335;
 }
 
-.call_to_action a.cta_btn:hover{
+.call_to_action a.cta_btn:hover {
 	background: #e69b4c;
 }
 
-.client_testimonials{
+.client_testimonials {}
 
-}
-
-.client_testimonials h3{
+.client_testimonials h3 {
 	color: #636363;
 	font-family: "LatoBold", arial;
 	font-size: 30px;
@@ -289,7 +289,7 @@ header nav ul li a:hover{
 
 /*  Testimonials  */
 
-.testimonials{
+.testimonials {
 	display: inline-block;
 	width: 260px;
 	height: auto;
@@ -304,15 +304,15 @@ header nav ul li a:hover{
 	line-height: 20px;
 }
 
-.testimonials:last-child{
+.testimonials:last-child {
 	margin-right: 0;
 }
 
-.testimonials blockquote{
+.testimonials blockquote {
 	margin-bottom: 25px;
 }
 
-.testimonials a.author{
+.testimonials a.author {
 	display: block;
 	color: #7e7d7d;
 	font-family: "Latobold", arial;
@@ -322,11 +322,11 @@ header nav ul li a:hover{
 	text-decoration: none;
 }
 
-.testimonials a.author:hover{
+.testimonials a.author:hover {
 	color: #5c5c5c;
 }
 
-.testimonials img.avatar{
+.testimonials img.avatar {
 	position: absolute;
 	border-radius: 100px;
 	border: 4px #ffffff solid;
@@ -337,7 +337,7 @@ header nav ul li a:hover{
 
 
 /*  Newsletter  */
-.newsletter{
+.newsletter {
 	width: 100%;
 	height: 180px;
 	background: #eba151 url('../img/newsletter_pat.png') repeat;
@@ -346,7 +346,7 @@ header nav ul li a:hover{
 	position: relative;
 }
 
-.newsletter p{
+.newsletter p {
 	width: 330px;
 	color: #fff;
 	font-family: "LatoBold", arial;
@@ -358,7 +358,7 @@ header nav ul li a:hover{
 	line-height: 40px;
 }
 
-.newsletter .sub_form{
+.newsletter .sub_form {
 	float: right;
 	margin-top: 57px;
 	width: 600px;
@@ -369,7 +369,7 @@ header nav ul li a:hover{
 }
 
 .newsletter .email_field,
-.newsletter .name_field{
+.newsletter .name_field {
 	border: none;
 	outline: none;
 	background: #ffffff;
@@ -385,35 +385,39 @@ header nav ul li a:hover{
 
 .newsletter .email_field::-webkit-input-placeholder,
 .newsletter .name_field::-webkit-input-placeholder {
-   color: #d3d2d2;
+	color: #d3d2d2;
 }
 
-.newsletter .email_field:-moz-placeholder ,/* Firefox 18- */
-.newsletter .name_field:-moz-placeholder { /* Firefox 18- */
-   color: #d3d2d2;
+.newsletter .email_field:-moz-placeholder,
+/* Firefox 18- */
+.newsletter .name_field:-moz-placeholder {
+	/* Firefox 18- */
+	color: #d3d2d2;
 }
 
-.newsletter .email_field::-moz-placeholder , /* Firefox 19+ */
-.newsletter .name_field::-moz-placeholder {  /* Firefox 19+ */
-   color: #d3d2d2;
+.newsletter .email_field::-moz-placeholder,
+/* Firefox 19+ */
+.newsletter .name_field::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #d3d2d2;
 }
 
 .newsletter .email_field:-ms-input-placeholder,
 .newsletter .name_field:-ms-input-placeholder {
-   color: #d3d2d2;
+	color: #d3d2d2;
 }
 
-.newsletter .email_field{
+.newsletter .email_field {
 	border-top-left-radius: 100px;
 	border-bottom-left-radius: 100px;
 	border-right: 1px #e4e4e4 solid;
 }
 
-.newsletter .name_field{
+.newsletter .name_field {
 	padding-right: 0;
 }
 
-.newsletter .submit_nl{
+.newsletter .submit_nl {
 	height: 40px;
 	padding: 0 40px;
 	border: 0;
@@ -432,7 +436,7 @@ header nav ul li a:hover{
 	-webkit-border-radius: 20px;
 }
 
-.newsletter .submit_nl:hover{
+.newsletter .submit_nl:hover {
 	cursor: pointer;
 	background: #4f4c49;
 }
@@ -440,24 +444,24 @@ header nav ul li a:hover{
 
 
 /*  Footer  */
-footer{
+footer {
 	width: 100%;
 	padding: 80px 0;
 	background-color: #393939;
 	text-align: center;
 }
 
-footer nav{
+footer nav {
 	width: 100%;
 }
 
-footer nav ul li{
+footer nav ul li {
 	list-style: none;
 	display: inline-block;
 	margin: 40px 0 20px 0;
 }
 
-footer nav ul li a{
+footer nav ul li a {
 	text-decoration: none;
 	color: #a5a5a5;
 	font-family: "LatoBold", arial;
@@ -468,7 +472,7 @@ footer nav ul li a{
 }
 
 
-footer hr.footer_sp{
+footer hr.footer_sp {
 	width: 370px;
 	height: 1px;
 	background-color: #333;
@@ -477,14 +481,14 @@ footer hr.footer_sp{
 	margin-bottom: 20px;
 }
 
-footer .rights{
+footer .rights {
 	color: #a5a5a5;
 	font-family: "LatoRegular", arial;
 	font-size: 13px;
 	letter-spacing: .5px;
 }
 
-footer .rights a{
+footer .rights a {
 	font-family: 'Latobold', arial;
 	font-weight: bold;
 	color: #777777;
@@ -493,14 +497,14 @@ footer .rights a{
 
 
 footer nav ul li a:hover,
-footer .rights a:hover{
+footer .rights a:hover {
 	color: #ffffff;
 }
 
 
 
 /*  General CSS*/
-.wrapper{
+.wrapper {
 	width: 1060px;
 	height: auto;
 	margin: 0 auto;
@@ -512,7 +516,7 @@ footer .rights a,
 header nav ul li a,
 .call_to_action a.cta_btn,
 .testimonials a.author,
-.newsletter .submit_nl{
+.newsletter .submit_nl {
 	transition: .2s linear;
 	-webkit-transition: .2s linear;
 	-moz-transition: .2s linear;
