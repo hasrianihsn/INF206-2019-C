@@ -49,14 +49,14 @@ class Auth extends CI_Controller
                 redirect('ikan_user/ikan_u');
             } else {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Wrong password! </div>');
-                redirect('Auth/login');
+                redirect('Auth/Userlogin');
             }
         } else {
             $this->session->set_flashdata(
                 'message',
                 '<div class="alert alert-danger" role="alert">User Name is not registered! </div>'
             );
-            redirect('Auth/login');
+            redirect('Auth/Userlogin');
         }
     }
 
@@ -102,7 +102,7 @@ class Auth extends CI_Controller
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
             Congratulation! your account has been created. Please Login!
         </div>');
-            redirect('Auth/login');
+            redirect('Auth/Userlogin');
         }
     }
     public function logout()
