@@ -46,7 +46,7 @@ class Auth extends CI_Controller
                     'id' => $user['id']
                 ];
                 $this->session->set_userdata($data);
-                redirect('user');
+                redirect('ikan_user/ikan_u');
             } else {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Wrong password! </div>');
                 redirect('Auth/login');
