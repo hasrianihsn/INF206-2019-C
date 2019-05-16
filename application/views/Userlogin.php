@@ -66,7 +66,7 @@
                     </a>
                 </div> -->
 
-                <div class="text-center w-full">
+                <div class="text-center w-full p-t-25 p-b-50">
                     <a class="txt1" href="<?= base_url('auth/UsersignUp/'); ?>">
                         Create new account
                         <i class="fa fa-long-arrow-right"></i>
