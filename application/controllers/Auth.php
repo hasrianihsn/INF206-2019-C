@@ -11,19 +11,19 @@ class Auth extends CI_Controller
 
     public function index()
     {
-        $this->load->view('home');
+        $this->load->view('Userhome');
     }
 
-    public function login()
+    public function Userlogin()
     {
         $this->form_validation->set_rules('name', 'Name', 'trim|required');
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
         if ($this->form_validation->run() == FALSE) {
             // $data['title'] = 'User Login';
-            $this->load->view('header');
-            $this->load->view('login');
-            $this->load->view('footer');
+            $this->load->view('Userheader');
+            $this->load->view('Userlogin');
+            $this->load->view('Userfooter');
         } else {
             //ketika validasi success
             $this->_login(); //method private supaya bisa menjalankan login
@@ -46,22 +46,22 @@ class Auth extends CI_Controller
                     'id' => $user['id']
                 ];
                 $this->session->set_userdata($data);
-                redirect('user');
+                redirect('ikan_user/ikan_u');
             } else {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Wrong password! </div>');
-                redirect('Auth/login');
+                redirect('Auth/Userlogin');
             }
         } else {
             $this->session->set_flashdata(
                 'message',
                 '<div class="alert alert-danger" role="alert">User Name is not registered! </div>'
             );
-            redirect('Auth/login');
+            redirect('Auth/Userlogin');
         }
     }
 
 
-    public function signUp()
+    public function UsersignUp()
     {
         $this->form_validation->set_rules('name', 'Name', 'required|trim');
         $this->form_validation->set_rules(
@@ -81,9 +81,9 @@ class Auth extends CI_Controller
         if ($this->form_validation->run() == false) {
 
             // $data['title'] = 'User Registration';
-            $this->load->view('header');
-            $this->load->view('signUp');
-            $this->load->view('footer');
+            $this->load->view('Userheader');
+            $this->load->view('UsersignUp');
+            $this->load->view('Userfooter');
         } else {
             $data = [
                 'name' => htmlspecialchars($this->input->post('name', true)),
@@ -102,7 +102,7 @@ class Auth extends CI_Controller
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
             Congratulation! your account has been created. Please Login!
         </div>');
-            redirect('Auth/login');
+            redirect('Auth/Userlogin');
         }
     }
     public function logout()
