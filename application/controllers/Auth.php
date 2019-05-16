@@ -20,7 +20,7 @@ class Auth extends CI_Controller
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
         if ($this->form_validation->run() == FALSE) {
-            $data['title'] = 'User Login';
+            // $data['title'] = 'User Login';
             $this->load->view('header');
             $this->load->view('login');
             $this->load->view('footer');
@@ -80,7 +80,7 @@ class Auth extends CI_Controller
 
         if ($this->form_validation->run() == false) {
 
-            $data['title'] = 'User Registration';
+            // $data['title'] = 'User Registration';
             $this->load->view('header');
             $this->load->view('signUp');
             $this->load->view('footer');

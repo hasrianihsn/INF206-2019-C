@@ -14,10 +14,10 @@
                         <a class="nav-link" href="<?= base_url('Auth/UsersignUp'); ?>">Sign Up</a>
                     </li>
                     <!-- <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url('Auth/index'); ?>">LogOut</a>
+                            <a class="nav-link" href="<?= base_url('Auth/'); ?>">LogOut</a>
                         </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('Auth/index'); ?>">Home</a>
+                        <a class="nav-link" href="<?= base_url('Auth/'); ?>">Home</a>
                 </ul>
             </div>
         </nav>
