@@ -14,7 +14,7 @@ class Auth extends CI_Controller
         $this->load->view('home');
     }
 
-    public function login()
+    public function Userlogin()
     {
         $this->form_validation->set_rules('name', 'Name', 'trim|required');
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
@@ -61,7 +61,7 @@ class Auth extends CI_Controller
     }
 
 
-    public function signUp()
+    public function UsersignUp()
     {
         $this->form_validation->set_rules('name', 'Name', 'required|trim');
         $this->form_validation->set_rules(
