@@ -1,5 +1,12 @@
 
 <body>
+
+	<style>
+.img-item {
+	width: 300px;
+	height: 200px;
+}
+</style>
 	<section class="billboard">
 		<header>
 			<div class="wrapper">

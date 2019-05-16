@@ -10,12 +10,19 @@
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
+	<style>
+.img-item {
+	width: 300px;
+	height: 200px;
+}
+</style>
+
 	<section class="billboard">
 		<header>
 			<div class="wrapper">
 				<a href="#"><img src="img/logo.png" class="h_logo" alt="" title=""></a>
 				<nav>
-						<ul class="main_nav">
+					<ul class="main_nav">
 						<li><a href="<?= base_url('index.php/ikan_user/ikan_u') ?>">Ikan</a></li>
 						<li><a href="<?= base_url('index.php/seafood_user/seafood_u') ?>">Seafood</a></li>
 						<li><a href="#">Log Out</a></li>
@@ -40,3 +47,7 @@
 			</div>
 		</section>
 	</section>
+
+
+</body>
+
