@@ -14,6 +14,13 @@ class login extends CI_Controller
         $this->aksi_login();
       }
     }
+
+    public function logout(){
+      $this->session->unset_userdata('email');
+
+      redirect('login');
+    }
+
     public function aksi_login(){
   	$email = $this->input->post('email');
   	$password = $this->input->post('password');
@@ -23,8 +30,11 @@ class login extends CI_Controller
 
       if ($user) {
         if ($password == $user['password']) {
+            $data = [
+              'email' => $user['email'],
+            ];
+            $this->session->set_userdata($data);
             redirect('addikan/ikan');
-            echo "berhasil";
           }
         }else{
           redirect('login');
