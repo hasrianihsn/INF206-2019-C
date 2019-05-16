@@ -55,7 +55,7 @@
                   </div>
                   <form method="POST" action="<?= base_url();?>index.php/login/" class="user form">
                     <div class="form-group">
-                      <input name="email" type="text" class="form-control form-control-user" id="email" placeholder="Enter Your Username..." required>
+                      <input name="email" type="text" class="form-control form-control-user" id="email" placeholder="Enter Your Email..." required>
                     </div>
                     <div class="form-group">
                       <input name="password" type="password" class="form-control form-control-user" id="password" placeholder="Password" required>
