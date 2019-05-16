@@ -40,7 +40,7 @@
 					<?php 
 					echo '<img src="data:image/jpeg;base64,'.base64_encode($key->gambar) .'" class="img-item" />';
 					?>
-						<a href="" target="_blink" class="author h4"><?php echo $key->nama_seafood ?></a>
+						<a href="<?= base_url('index.php/harga_s/price') ?>" target="_blink" class="author h4"><?php echo $key->nama_seafood ?></a>
 					</div>			
 					<?php } ?>
 				</div>
