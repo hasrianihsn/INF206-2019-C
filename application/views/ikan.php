@@ -29,7 +29,7 @@
 					<?php 
 					echo '<img src="data:image/jpeg;base64,'.base64_encode($key->gambar_ikan) .'" class="img-item" />';
 					?>
-						<a href="" target="_blink" class="author h4"><?php echo $key->nama_ikan ?></a>
+						<a href="<?= base_url('index.php/harga_user/harga') ?>" target="_blink" class="author h4"><?php echo $key->nama_ikan ?></a>
 					</div>			
 					<?php } ?>
 				</div>
