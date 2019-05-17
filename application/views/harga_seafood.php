@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>halaman seafood</title>
+	<title>harga ikan </title>
 	<meta charset="utf-8">
 	<meta name="author" content="pixelhint.com">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -10,12 +10,6 @@
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-	<style>
-.img-item {
-	width: 300px;
-	height: 200px;
-}
-</style>
 
 	<section class="billboard">
 		<header>
@@ -31,23 +25,24 @@
 			</div>
 		</header>
 
-		</section>
 		<section class="caption">
 			<div class="wrapper">
-				<div class="row">
+				<section class="testimonials">
 				<?php foreach($result as $key){  ?>
-					<div class="col-4 my-2">
-					<?php 
+					<?php
 					echo '<img src="data:image/jpeg;base64,'.base64_encode($key->gambar) .'" class="img-item" />';
 					?>
-						<a href="<?= base_url('index.php/harga_s/price') ?>" target="_blink" class="author h4"><?php echo $key->nama_seafood ?></a>
-					</div>			
-					<?php } ?>
-				</div>
-			</div>
-		</section>
+
+					<a href="" target="_blink" class="author"><?php echo $key->nama_seafood ?></a>
+					<div class="">
+						<h4>Harga Ikan/kg</h4>
+						<h5>Pasar <?php echo $key->nama_pasar ?>: Rp. <?php echo $key->harga ?></h5>
+					</div>
+						<?php } ?>
+				</section>
+
+
 	</section>
 
 
 </body>
-
