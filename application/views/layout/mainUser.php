@@ -20,8 +20,8 @@
 				<a href="#"><img src="img/logo.png" class="h_logo" alt="" title=""></a>
 				<nav>
 					<ul class="main_nav">
-						<li><a href="<?php echo base_url();?>ikan.php">Ikan</a></li>
-						<li><a href="<?php echo base_url();?>seafood.php">Seafood</a></li>
+						<li><a href="<?= base_url('index.php/ikan_user/ikan_u') ?>">Ikan</a></li>
+						<li><a href="<?= base_url('index.php/seafood_user/seafood_u') ?>">Seafood</a></li>
 						<li><a href="#">Log Out</a></li>
 					</ul>
 				</nav>
