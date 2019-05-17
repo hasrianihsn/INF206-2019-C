@@ -6,7 +6,23 @@
   {
     public function create_admin($data){
       $this->db->insert('admin',$data);
+		}
+	public function getData(){
+      $query = $this->db->get('data');
+      return $query->result();
     }
+    public function getDatas(){
+      $query = $this->db->get('data_seafood');
+      return $query->result();
+    }
+    public function harga(){
+     $query = $this->db->get('data');
+     return $query->result();
+   }
+    public function hargas(){
+     $query = $this->db->get('data_seafood');
+     return $query->result();
+   }
   //   class fishlist_model extends CI_Model{
 	//        function cek_login($data,$where){
 	// 	         return $this->db->get_where($data,$where);
