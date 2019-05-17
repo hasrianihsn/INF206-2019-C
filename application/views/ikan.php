@@ -15,7 +15,7 @@
 					<ul class="main_nav">
 						<li><a href="<?= base_url('index.php/ikan_user/ikan_u') ?>">Ikan</a></li>
 						<li><a href="<?= base_url('index.php/seafood_user/seafood_u') ?>">Seafood</a></li>
-						<li><a href="#">Log Out</a></li>
+						<li><a href="<?= base_url('index.php/Auth') ?>">Seafood</a></li>
 					</ul>
 				</nav>
 			</div>
