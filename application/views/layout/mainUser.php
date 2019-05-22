@@ -8,7 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/css/main.css">
     <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/main.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>/js/main.js"></script>
+	<link rel="stylesheet" href="<?php echo base_url(); ?>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<?php
@@ -23,6 +24,8 @@
 						<li><a href="<?= base_url('index.php/ikan_user/ikan_u') ?>">Ikan</a></li>
 						<li><a href="<?= base_url('index.php/seafood_user/seafood_u') ?>">Seafood</a></li>
 						<li><a href="#">Log Out</a></li>
+												<li><input class="form-control" id="txtSearch" name="txtSearch" placeholder="Search" aria-controls="example1" type="text" /></li>
+
 					</ul>
 				</nav>
 			</div>

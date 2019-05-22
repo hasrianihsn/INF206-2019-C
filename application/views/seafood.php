@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>halaman seafood</title>
 	<meta charset="utf-8">
 	<meta name="author" content="pixelhint.com">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
+
 <body>
 	<style>
-.img-item {
-	width: 300px;
-	height: 200px;
-}
-</style>
+		.img-item {
+			width: 300px;
+			height: 200px;
+		}
+
+		.isi {
+			color: white;
+			font-family: times, serif;
+			font-style: italic;
+			border-bottom: 3px solid #666;
+			width: 300px;
+
+		}
+
+	</style>
 
 	<section class="billboard">
 		<header>
@@ -26,28 +38,35 @@
 						<li><a href="<?= base_url('index.php/ikan_user/ikan_u') ?>">Ikan</a></li>
 						<li><a href="<?= base_url('index.php/seafood_user/seafood_u') ?>">Seafood</a></li>
 						<li><a href="<?= base_url('index.php/Auth') ?>">Log Out</a></li>
+						<li><input class="form-control" id="txtSearch" name="txtSearch" placeholder="Search" aria-controls="example1" type="text" /></li>
+
 					</ul>
 				</nav>
 			</div>
 		</header>
 
-		</section>
-		<section class="caption">
-			<div class="wrapper">
-				<div class="row">
+	</section>
+	<section class="caption">
+		<div class="wrapper">
+			<div class="row isi">
+				<h1 style="font-size:30px">DAFTAR SEAFOOD</h1>
+			</div>
+			<br>
+			<br>
+			<div class="row">
 				<?php foreach($result as $key){  ?>
-					<div class="col-4 my-2">
+				<div class="col-4 my-2">
 					<?php 
 					echo '<img src="data:image/jpeg;base64,'.base64_encode($key->gambar) .'" class="img-item" />';
 					?>
-						<a href="<?= base_url('index.php/harga_s/price') ?>" target="_blink" class="author h4"><?php echo $key->nama_seafood ?></a>
-					</div>			
-					<?php } ?>
+					<a href="<?= base_url('index.php/harga_s/price') ?>" target="_blink"
+						class="author h4"><?php echo $key->nama_seafood ?></a>
 				</div>
+				<?php } ?>
 			</div>
-		</section>
+		</div>
+	</section>
 	</section>
 
 
 </body>
-

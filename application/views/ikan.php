@@ -6,6 +6,14 @@
 	width: 300px;
 	height: 200px;
 }
+.isi{
+	color : white;
+	font-family: times, serif;  
+	font-style:italic;
+	  border-bottom: 3px solid #666;
+  width: 200px;
+	
+}
 </style>
 	<section class="billboard">
 		<header>
@@ -16,13 +24,21 @@
 						<li><a href="<?= base_url('index.php/ikan_user/ikan_u') ?>">Ikan</a></li>
 						<li><a href="<?= base_url('index.php/seafood_user/seafood_u') ?>">Seafood</a></li>
 						<li><a href="<?= base_url('index.php/Auth') ?>">Log Out</a></li>
+						<li><input class="form-control" id="txtSearch" name="txtSearch" placeholder="Search" aria-controls="example1" type="text" /></li>
 					</ul>
 				</nav>
 			</div>
+			
 		</header>
 	</section>
 		<section class="caption">
 			<div class="wrapper">
+				<div class="row isi">
+				<h1 style="font-size:30px">DAFTAR IKAN</h1>
+				</div>
+				<br>
+				<br>
+
 				<div class="row">
 				<?php foreach($result as $key){  ?>
 					<div class="col-4 my-2">
