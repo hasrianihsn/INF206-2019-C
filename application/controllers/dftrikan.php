@@ -8,7 +8,12 @@ class dftrikan extends CI_Controller
     $data['total'] = $this->data_model->getGroupBy();
     $data['main_view'] = 'Admin/dftrikan_view';
     $this->load->view('Admin/layout/main', $data);
+	}
+	
+	public function hapus($gambarIkan)
+  {
+    $this->data_model->hapusData($gambarIkan);
+    redirect('dftrikan/daftarikan');
   }
-
   }
  ?>
