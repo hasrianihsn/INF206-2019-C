@@ -1,9 +1,14 @@
 <?php
 class dftrikan extends CI_Controller
 {
-    public function daftarikan(){
-      $data['main_view'] = 'dftrikan_view';
-      $this->load->view('layout/main',$data);
-    }
+    public function daftarikan()
+  {
+    $this->db->order_by('nama_ikan', 'asc');
+    $data['ikan'] = $this->db->get('data')->result();
+    $data['total'] = $this->data_model->getGroupBy();
+    $data['main_view'] = 'Admin/dftrikan_view';
+    $this->load->view('Admin/layout/main', $data);
+  }
+
   }
  ?>
