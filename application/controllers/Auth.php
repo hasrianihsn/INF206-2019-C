@@ -11,7 +11,7 @@ class Auth extends CI_Controller
 
     public function index()
     {
-        $this->load->view('Userhome');
+        $this->load->view('User/Userhome');
     }
 
     public function Userlogin()
@@ -21,9 +21,9 @@ class Auth extends CI_Controller
 
         if ($this->form_validation->run() == FALSE) {
             // $data['title'] = 'User Login';
-            $this->load->view('Userheader');
-            $this->load->view('Userlogin');
-            $this->load->view('Userfooter');
+            $this->load->view('User/Userheader');
+            $this->load->view('User/Userlogin');
+            $this->load->view('User/Userfooter');
         } else {
             //ketika validasi success
             $this->_login(); //method private supaya bisa menjalankan login
@@ -81,9 +81,9 @@ class Auth extends CI_Controller
         if ($this->form_validation->run() == false) {
 
             // $data['title'] = 'User Registration';
-            $this->load->view('Userheader');
-            $this->load->view('UsersignUp');
-            $this->load->view('Userfooter');
+            $this->load->view('User/Userheader');
+            $this->load->view('User/UsersignUp');
+            $this->load->view('User/Userfooter');
         } else {
             $data = [
                 'name' => htmlspecialchars($this->input->post('name', true)),
