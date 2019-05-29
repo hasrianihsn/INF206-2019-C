@@ -16,29 +16,15 @@ class Admin extends CI_Controller
         $this->form_validation->set_rules('password', 'password', 'trim|required');
 
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('headerAdmin');
-            $this->load->view('login');
-            $this->load->view('footerAdmin');
+            $this->load->view('Admin/headerAdmin');
+            $this->load->view('Admin/login');
+            $this->load->view('Admin/footerAdmin');
         } else {
             //ketika validasi success
             $this->_login(); //method private supaya bisa menjalankan login
         }
     }
 
-    // public function login()
-    // {
-    //     $this->form_validation->set_rules('name', 'name', 'trim|required');
-    //     $this->form_validation->set_rules('password', 'Password', 'trim|required');
-
-    //     if ($this->form_validation->run() == FALSE) {
-    //         $this->load->view('headerAdmin');
-    //         $this->load->view('login');
-    //         $this->load->view('footerAdmin');
-    //     } else {
-    //         //ketika validasi success
-    //         $this->_login(); //method private supaya bisa menjalankan login
-    //     }
-    // }
 
     private function _login()
     {
@@ -96,9 +82,9 @@ class Admin extends CI_Controller
         $this->form_validation->set_rules('password2', 'password', 'required|trim|matches[password1]');
 
         if ($this->form_validation->run() == false) {
-            $this->load->view('headerAdmin');
-            $this->load->view('signUp');
-            $this->load->view('footerAdmin');
+            $this->load->view('Admin/headerAdmin');
+            $this->load->view('Admin/signUp');
+            $this->load->view('Admin/footerAdmin');
         } else {
             $data = [
                 'name' => htmlspecialchars($this->input->post('name', true)),
