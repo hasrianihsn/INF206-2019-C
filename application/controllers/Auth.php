@@ -132,7 +132,7 @@ class Auth extends CI_Controller
         $this->load->view('User/dftrikanUser_view', $data);
         $this->load->view('User/TampilanFooter');
     }
-<<<<<<< HEAD
+
     //tampilan Seafood by Zakiatus Safara & Hasriani
 
     public function Seafood()
@@ -162,6 +162,5 @@ class Auth extends CI_Controller
         $this->load->view('User/TampilanFooter');
     }
 
-=======
->>>>>>> master
+
 }
