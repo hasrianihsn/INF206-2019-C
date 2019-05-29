@@ -132,4 +132,36 @@ class Auth extends CI_Controller
         $this->load->view('User/dftrikanUser_view', $data);
         $this->load->view('User/TampilanFooter');
     }
+<<<<<<< HEAD
+    //tampilan Seafood by Zakiatus Safara & Hasriani
+
+    public function Seafood()
+    {
+        $this->load->view('User/TampilanHeader');
+        $this->db->order_by('nama_seafood', 'asc');
+        // $data['emailseafood'] = $this->db->where('email_id', $this->session->userdata('email'))->get('data')->result_array();
+        $data['seafood'] = $this->db->get('data_seafood')->result();
+        $data['total'] = $this->seafood_model->getGroupBy();
+        $data['main_view'] = 'dftrseafoodUser_view';
+        // $this->load->view('layout/mainUser', $data);
+        $this->load->view('User/dftrseafoodUser_view', $data);
+        $this->load->view('User/TampilanFooter');
+    }
+
+    public function About()
+    {
+        $this->load->view('User/TampilanHeader');
+        $this->load->view('User/About');
+        $this->load->view('User/TampilanFooter');
+    }
+
+    public function Team()
+    {
+        $this->load->view('User/TampilanHeader');
+        $this->load->view('User/team');
+        $this->load->view('User/TampilanFooter');
+    }
+
+=======
+>>>>>>> master
 }
