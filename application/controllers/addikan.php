@@ -37,7 +37,7 @@ class addikan extends CI_Controller
         $data['harga'] = $_POST['hargaIkan'][$i];
         $this->db->insert('data', $data);
       }
-      redirect('addikan');
+      redirect('dftrikan/daftarikan');
     }
   }
 
