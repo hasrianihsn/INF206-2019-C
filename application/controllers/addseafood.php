@@ -37,7 +37,7 @@ class addseafood extends CI_Controller
         $data['harga'] = $_POST['hargaSeafood'][$i];
         $this->db->insert('data_seafood', $data);
       }
-      redirect('addseafood');
+      redirect('dftrseafood/daftarseafood');
     }
   }
   public function tambah_pasar()
