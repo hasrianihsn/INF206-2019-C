@@ -40,4 +40,15 @@ class addseafood extends CI_Controller
       redirect('addseafood');
     }
   }
+  public function tambah_pasar()
+  {
+    $data['nama_seafood'] = $this->input->post('namaseafood');
+    $data['gambar_seafood'] = $this->input->post('gambar_seafood');
+    for ($i = 0; $i < count($_POST['hargaseafood']); $i++) {
+      $data['nama_pasar'] = $_POST['namaPasar'][$i];
+      $data['harga'] = $_POST['hargaseafood'][$i];
+      $this->db->insert('data_seafood', $data);
+    }
+    redirect(base_url('dftrseafood/daftarseafood'));
+  }
 }
