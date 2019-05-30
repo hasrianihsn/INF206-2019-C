@@ -28,6 +28,8 @@
 
         .btn {
             width: 80px;
+            color: #0072AB !important;
+            background-color: #000C31;
         }
 
         .isi {
