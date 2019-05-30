@@ -49,23 +49,29 @@
   </div>
 </div>
 <!-- End of Page Content -->
-<script type="text/javascript">
+
+
+<script>
 const generateFill = function () {
   let divPasar = document.createElement('div')
   divPasar.setAttribute('class','form-group row')
+  let labelPasar = document.createElement('label')
+  labelPasar.setAttribute('class','col-lg-2 offset-lg-2')
+  labelPasar.innerHTML = namaPasar
   let divNama = document.createElement('div')
-  divNama.setAttribute('class','col-lg-5')
+  divNama.setAttribute('class','col-lg-3')
   let inputNama = document.createElement('input')
   inputNama.setAttribute('class','form-control')
-  inputNama.setAttribute('placeholder',`nama pasar` )
+  inputNama.setAttribute('placeholder',`masukkan nama pasar` )
   inputNama.setAttribute('name',`namaPasar[]`)
   let divInput = document.createElement('div')
-  divInput.setAttribute('class','col-lg-5')
+  divInput.setAttribute('class','col-lg-3')
   let inputHarga = document.createElement('input')
   inputHarga.setAttribute('class','form-control')
-  inputHarga.setAttribute('placeholder',`harga` )
-  inputHarga.setAttribute('name',`hargaseafood[]`)
+  inputHarga.setAttribute('placeholder',`masukkan harga` )
+  inputHarga.setAttribute('name',`hargaSeafood[]`)
   divNama.appendChild(inputNama)
+  divPasar.appendChild(labelPasar)
   divInput.appendChild(inputHarga)
   divPasar.appendChild(divInput)
   divPasar.appendChild(divNama)
@@ -79,6 +85,8 @@ console.log(inputNamaPasar)
 let addPasar = document.querySelector('#addPasar').addEventListener('click',function(){
   event.preventDefault()
   jumlahPasar++
+  // console.log(jumlahPasar)
+  // namaPasar.push(inputNamaPasar.value)
   fieldPasar.innerHTML = ''
   for (var i = 0; i < jumlahPasar; i++) {
     fieldPasar.appendChild(generateFill())
@@ -92,6 +100,8 @@ let removePasar = document.querySelector('#removePasar').addEventListener('click
 
   event.preventDefault()
   jumlahPasar--
+  // console.log(jumlahPasar)
+  // namaPasar.push(inputNamaPasar.value)
   fieldPasar.innerHTML = ''
   for (var i = 0; i < jumlahPasar; i++) {
     fieldPasar.appendChild(generateFill())
