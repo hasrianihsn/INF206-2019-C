@@ -46,7 +46,7 @@ class Auth extends CI_Controller
                     'id' => $user['id']
                 ];
                 $this->session->set_userdata($data);
-                redirect('ikan_user/ikan_u');
+                redirect('Auth/Ikan');
             } else {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Wrong password! </div>');
                 redirect('Auth/Userlogin');
@@ -113,5 +113,23 @@ class Auth extends CI_Controller
         You have been logged out!
     </div>');
         redirect('Auth');
+    }
+    //tampilan ikan by Zakiatus Safara & Hasriani
+    public function Tampilan()
+    {
+        $this->load->view('User/TampilanHeader');
+        $this->load->view('User/Tampilan');
+        $this->load->view('User/TampilanFooter');
+    }
+
+    public function Ikan()
+    {
+        $this->load->view('User/TampilanHeader');
+        $this->db->order_by('nama_ikan', 'asc');
+        // $data['emailikan'] = $this->db->where('email_id', $this->session->userdata('email'))->get('data')->result_array();
+        $data['ikan'] = $this->db->get('data')->result();
+        $data['total'] = $this->data_model->getGroupBy();
+        $this->load->view('User/dftrikanUser_view', $data);
+        $this->load->view('User/TampilanFooter');
     }
 }
