@@ -134,4 +134,60 @@
   ?>
   </div>
 </div>
+<script type="text/javascript">
+  const generateFill = function() {
+    let divPasar = document.createElement('div')
+    divPasar.setAttribute('class', 'form-group row')
+    let divNama = document.createElement('div')
+    divNama.setAttribute('class', 'col-lg-5')
+    let inputNama = document.createElement('input')
+    inputNama.setAttribute('class', 'form-control')
+    inputNama.setAttribute('placeholder', `nama pasar`)
+    inputNama.setAttribute('name', `namaPasar[]`)
+    let divInput = document.createElement('div')
+    divInput.setAttribute('class', 'col-lg-5')
+    let inputHarga = document.createElement('input')
+    inputHarga.setAttribute('class', 'form-control')
+    inputHarga.setAttribute('placeholder', `harga`)
+    inputHarga.setAttribute('name', `hargaIkan[]`)
+    divNama.appendChild(inputNama)
+    divInput.appendChild(inputHarga)
+    divPasar.appendChild(divInput)
+    divPasar.appendChild(divNama)
+    return divPasar
+  }
+  let jumlahPasar = 0;
+  let namaPasar = [];
+  let inputNamaPasar = document.querySelector('#namaPasar');
+  const fieldPasar = document.querySelector('#fieldPasar')
+  console.log(inputNamaPasar)
+  let addPasar = document
+    .querySelector('#addPasar')
+    .addEventListener('click', function() {
+      event.preventDefault()
+      jumlahPasar++
+      // console.log(jumlahPasar) namaPasar.push(inputNamaPasar.value)
+      fieldPasar.innerHTML = ''
+      for (var i = 0; i < jumlahPasar; i++) {
+        fieldPasar.appendChild(generateFill())
 
+      }
+      nputNamaPasar.value = ''
+
+    })
+
+  let removePasar = document
+    .querySelector('#removePasar')
+    .addEventListener('click', function() {
+
+      event.preventDefault()
+      jumlahPasar--
+      // console.log(jumlahPasar) namaPasar.push(inputNamaPasar.value)
+      fieldPasar.innerHTML = ''
+      for (var i = 0; i < jumlahPasar; i++) {
+        fieldPasar.appendChild(generateFill())
+
+      }
+
+    })
+</script>
